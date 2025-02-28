@@ -1,0 +1,39 @@
+Exploratory Data Analysis (EDA) on PIMA Diabetes Dataset
+
+1. Introduction
+The PIMA Diabetes dataset consists of diagnostic measurements used to predict whether a patient has diabetes. The dataset includes various numerical and categorical variables related to health parameters such as glucose levels, blood pressure, BMI, and insulin levels. The primary goal of this analysis is to clean the dataset and explore relationships between variables through statistical and visualization techniques.
+
+2. Data Cleaning
+
+2.1 Handling Missing Values
+Zero values in columns where zero is not valid (e.g., Glucose, BloodPressure, SkinThickness, Insulin, and BMI) were treated as missing and replaced using median imputation.
+
+2.2 Removing Duplicate Records
+Duplicate rows were removed to ensure data integrity.
+
+2.3 Outlier Detection and Treatment
+Outliers were detected using the Interquartile Range (IQR) method and removed to enhance data quality.
+
+3. Exploratory Data Analysis (EDA)
+
+3.1 Univariate Analysis
+- Histograms and box plots were used to analyze distributions and detect outliers.
+- Summary statistics (mean, median, standard deviation, skewness) provided insights into variable characteristics.
+
+3.2 Bivariate Analysis
+- A correlation matrix identified linear relationships between numerical variables.
+- Scatter plots explored the relationship between glucose and insulin levels.
+- Box plots compared BMI distributions across diabetes outcomes.
+
+3.3 Multivariate Analysis
+- Pair plots visualized interactions among multiple variables.
+- A heatmap highlighted correlated features.
+
+4. Key Insights and Observations
+- Glucose levels are the most significant predictor of diabetes.
+- BMI and Age also play a role in diabetes likelihood.
+- Insulin and SkinThickness have missing and extreme values, requiring careful preprocessing.
+- Feature correlation suggests minimal multicollinearity, supporting regression modeling.
+
+5. Conclusion
+Comprehensive data cleaning and exploratory analysis identified key patterns in the dataset. The findings suggest that glucose levels, BMI, and age are critical indicators of diabetes, providing a foundation for predictive modeling.
